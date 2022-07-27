@@ -14,7 +14,7 @@ const Searchbar = ({ onSubmit }) => {
       return toast.error('Enter something');
     }
     onSubmit(searchQuery);
-    setSearchQuery('');
+    setSearchQuery(event.currentTarget.value);
   };
 
   const handleInput = event => {
